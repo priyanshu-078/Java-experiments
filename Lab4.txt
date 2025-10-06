@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public Lab3{ 
+
+  public static void main(String [] args){
+       String [] arr=new String [5];
+       Scanner sc= new Scanner(System.in);
+       try{
+         int [] arr ={1,2,3,4,5};
+         System.out.print("enter the no. to access the array element from 0 to 4 : ");
+         int no=sc.nextInt();
+         System.out.println(arr[no]);
+
+         int a=4;
+         System.out.print("enter the no. : ");
+         int b=sc.nextInt();
+         int c= a/b;
+
+
+
+
+
+
+
+       }catch(ArrayOutOfIndexException e){
+          System.out.println(e.getMessage());
+          main(arr);
+       }catch(AirthmaticException e){
+          System.out.println(e.getMessage("by zero "));
+          main(arr);
+       }
+
+  }
+}
